@@ -1,0 +1,7 @@
+node_modules
+.DS_Store
+.env
+.sass-cache
+*Lease*
+data/admin.json
+images/jackson-master

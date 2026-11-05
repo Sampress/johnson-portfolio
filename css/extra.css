@@ -1,0 +1,40 @@
+/* Additions on top of style.css (kept separate so the compiled template CSS stays untouched) */
+
+/* counters: "+" and "%" suffixes */
+.counter-plus::after { content: "+"; }
+.counter-pct::after { content: "%"; }
+
+/* experience timeline: bullet lists + non-clickable titles */
+.timeline-label ul { padding-left: 18px; margin: 8px 0 0; }
+.timeline-label li { margin-bottom: 4px; }
+.timeline-label h2 a { cursor: default; }
+
+/* contact form */
+.hp-field { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.contact-status { margin-top: 12px; min-height: 1.4em; font-size: 15px; }
+.contact-status.ok { color: #2e7d32; }
+.contact-status.err { color: #c62828; }
+
+/* work detail page */
+.wd-body { margin: 0; background: #f6f7f9; color: #333; font-family: "Quicksand", Arial, sans-serif; line-height: 1.7; font-size: 16px; }
+.wd-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 16px 24px; background: #fff; border-bottom: 1px solid #e6e8eb; }
+.wd-top a { color: #2c98f0; text-decoration: none; font-weight: 500; }
+.wd-brand { color: #777; font-size: 14px; }
+.wd-wrap { max-width: 860px; margin: 32px auto; padding: 0 20px 40px; }
+.wd-loading { color: #777; }
+.wd-hero { display: block; width: 100%; max-height: 460px; object-fit: cover; border-radius: 8px; margin-bottom: 24px; background: #e4e7eb; }
+.wd-cat { display: inline-block; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; color: #2c98f0; font-weight: 700; }
+.wd-title { margin: 6px 0 14px; font-size: 32px; line-height: 1.25; font-weight: 700; color: #222; }
+.wd-role { margin: 0 0 12px; }
+.wd-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
+.wd-chip { background: #e8f3fd; color: #1f6fb2; padding: 3px 12px; border-radius: 999px; font-size: 14px; }
+.wd-section { margin-top: 26px; }
+.wd-section h2 { font-size: 20px; margin: 0 0 8px; color: #222; }
+.wd-text p, p.wd-text { white-space: pre-line; margin: 0 0 12px; }
+.wd-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 30px; }
+.wd-btn { display: inline-block; padding: 10px 20px; border-radius: 4px; border: 1px solid #2c98f0; color: #2c98f0; text-decoration: none; font-weight: 500; background: #fff; }
+.wd-btn:hover { background: #eef6fe; }
+.wd-btn-primary { background: #2c98f0; color: #fff; }
+.wd-btn-primary:hover { background: #1f86dc; }
+.wd-foot { text-align: center; padding: 24px; color: #888; font-size: 14px; }
+@media (max-width: 560px) { .wd-title { font-size: 26px; } .wd-top { padding: 12px 16px; } }
