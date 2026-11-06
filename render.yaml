@@ -1,0 +1,10 @@
+services:
+ -type: web
+  name: johnson-portfolio
+  env: static
+  buildcommand: "echo 'No build needed for static site...'"
+  staticPubishPath: .
+  routes:
+    -type: rewrite
+     source: /*
+     destination: /index.html
